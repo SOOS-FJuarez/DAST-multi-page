@@ -11,9 +11,10 @@ jobs:
 
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
           api_key: ${{ secrets.SOOS_API_KEY }}
-          project_name: 'GH-Actions-DAST-multi-page'          
+          project_name: 'GH-Actions-DAST-multi-page'     
+          scan_mode: 'fullscan'
           auth_form_type: 'multi_page'
-          target_url: 'https://login.yahoo.com/'
+          target_url: 'https://mail.yahoo.com/d/folders/1'
           api_url: 'https://qa-api.soos.io/api/'          
           auth_login_url: 'https://login.yahoo.com/'                  
           auth_username: 'franco.juarez08@yahoo.com'        
