@@ -11,7 +11,7 @@ jobs:
 
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
           api_key: ${{ secrets.SOOS_API_KEY }}
-          project_name: 'GH-Actions-DAST-multi-page'
+          project_name: GH-Actions-DAST-multi-page
           auth_form_type: 'multi_page'
           target_url: 'https://mail.yahoo.com/d/folders/1'
           api_url: 'https://qa-api.soos.io/api/'          
@@ -22,5 +22,5 @@ jobs:
           auth_password_field: 'login-passwd'          
           auth_submit_field: 'login-signin'          
           auth_second_submit_field: 'login-signin' 
-          on_failure: 'continue_on_failure'
+          on_failure: 'fail_the_build'
 
