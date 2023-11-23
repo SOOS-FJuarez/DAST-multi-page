@@ -16,8 +16,8 @@ jobs:
           target_url: 'https://mail.yahoo.com/d/folders/1'
           api_url: 'https://qa-api.soos.io/api/'          
           auth_login_url: 'https://login.yahoo.com/'                  
-          auth_username: 'franco.juarez08@yahoo.com'        
-          auth_password: 'Micring00123'        
+          auth_username: 'franco.juarez08@yahoo.com'
+          auth_password:         
           auth_username_field: 'login-username'        
           auth_password_field: 'login-passwd'          
           auth_submit_field: 'login-signin'          
