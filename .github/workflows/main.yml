@@ -20,6 +20,6 @@ jobs:
           auth_password: 'Micring00'        
           auth_username_field: 'login-username'        
           auth_password_field: 'login-passwd'          
-          auth_submit_field:           
-          auth_second_submit_field: 'login-signin'
+          auth_submit_field: 'login-signin'          
+          auth_second_submit_field: 
 
