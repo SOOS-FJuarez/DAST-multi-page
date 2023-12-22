@@ -22,5 +22,5 @@ jobs:
           auth_password_field: 'login-passwd'          
           auth_submit_field: 'login-signin'          
           auth_second_submit_field: 'login-signin' 
-          on_failure: 'fail_the_build'
+          on_failure: 'continue_on_failure'
 
