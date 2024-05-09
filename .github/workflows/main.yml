@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run SOOS DAST Baseline Analysis
-        uses: soos-io/soos-dast-github-action@v2.0.0 # GET Latest Version from https://github.com/marketplace/actions/soos-dast
+        uses: soos-io/soos-dast-github-action@fix/PA-13914-qa # GET Latest Version from https://github.com/marketplace/actions/soos-dast
         with:
 
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
@@ -17,10 +17,7 @@ jobs:
           api_url: 'https://qa-api.soos.io/api/'          
           auth_login_url: 'https://login.yahoo.com/'                  
           auth_username: 'franco.juarez08@yahoo.com'
-          auth_password: 'Micring00'        
-          auth_username_field: 'login-username'        
-          auth_password_field: 'login-passwd'          
-          auth_submit_field: 'login-signin'          
-          auth_second_submit_field: 'login-signin' 
+          auth_password: '1234'        
+          auth_verification_url: 'https://apis\.mail\.yahoo\.com/ws/v3/batch\?appId=(.*)'
           on_failure: 'continue_on_failure'
 
