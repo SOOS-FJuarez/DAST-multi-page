@@ -17,7 +17,11 @@ jobs:
           api_url: 'https://qa-api.soos.io/api/'          
           auth_login_url: 'https://login.yahoo.com/'                  
           auth_username: 'franco.juarez08@yahoo.com'
-          auth_password: '1234'        
+          auth_password: '1234'
+          auth_username_field: 'login-username'        
+          auth_password_field: 'login-passwd'          
+          auth_submit_field: 'login-signin'          
+          auth_second_submit_field: 'login-signin' 
           auth_verification_url: 'https://apis\.mail\.yahoo\.com/ws/v3/batch\?appId=(.*)'
           on_failure: 'continue_on_failure'
 
