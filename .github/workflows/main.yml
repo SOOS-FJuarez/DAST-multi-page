@@ -15,12 +15,13 @@ jobs:
           auth_form_type: 'multi_page'
           target_url: 'https://mail.yahoo.com/d/folders/1'
           api_url: 'https://qa-api.soos.io/api/'          
-          auth_login_url: 'https://login.yahoo.com/'                  
+          auth_login_url: ''                  
           auth_username: 'franco.juarez08@yahoo.com'
-          auth_password: 'invalidpass'
+          auth_password: 'Micring00'
           auth_username_field: 'login-username'        
           auth_password_field: 'login-passwd'          
           auth_submit_field: 'login-signin'          
           auth_second_submit_field: 'login-signin' 
-          on_failure: 'continue_on_failure'
+          on_failure: 'fail_the_build'
+          log_level: "WARN"
 
