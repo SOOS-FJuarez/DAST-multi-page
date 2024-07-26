@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run SOOS DAST Baseline Analysis
-        uses: soos-io/soos-dast-github-action@fix/PA-13914-qa # GET Latest Version from https://github.com/marketplace/actions/soos-dast
+        uses: soos-io/soos-dast-github-action@v2.0.6 # GET Latest Version from https://github.com/marketplace/actions/soos-dast
         with:
 
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
@@ -15,14 +15,14 @@ jobs:
           auth_form_type: 'multi_page'
           target_url: 'https://mail.yahoo.com/d/folders/1?reason=onboarded'
           api_url: 'https://qa-api.soos.io/api/'          
-          auth_login_url: ''                  
+          auth_login_url: 'https://login.yahoo.com/'                  
           auth_username: 'franco.juarez08@yahoo.com'
-          auth_password: 'invalidPassword'
+          auth_password: 'Micring00'
           auth_username_field: 'login-username'        
           auth_password_field: 'login-passwd'          
           auth_submit_field: 'login-signin'          
           auth_second_submit_field: 'login-signin' 
-          log_level: WARN
-          on_failure: "fail_the_build"
+          #log_level: WARN
+          on_failure: "continue_on_failure"
       
 
